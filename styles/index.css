@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+  --color-primary: #ffe51c;
+  --color-secondary-dark: #2a2c26;
+  --color-secondary-light: #fefcf5;
+  --color-background: #11110f;
+  --color-text: #60605f;
+  --color-white: #ffffff;
+
+
+  --font-inter: 'Inter', sans-serif;
+
+  .clip-hexagon {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-secondary-dark);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

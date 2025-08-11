@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Portfolio</title>
+</head>
+<body class="overflow-x-hidden">
+    <header class="relative">
+        <div class="w-full h-full flex flex-col items-center justify-center">
+            <div class="flex flex-col min-h-[100px] px-[40px] py-[20px] w-full bg-transparent">
+                <div class="flex w-full h-full items-center justify-between">
+                    <div class="h-full">
+                        <img src="./assets/logo.png" alt="company logo"
+                            class="w-[150px] md:w-[190px] md:h-[90px] h-[60px]" />
+                    </div>
+                    <div class="flex flex-col items-center justify-center h-full">
+                        <nav class="flex items-center justify-between w-full h-full gap-8">
+                            <ul
+                                class="hidden lg:flex items-center justify-start gap-6 font-normal text-[var(--color-secondary)]">
+                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                    <a href="#">Our Services</a>
+                                </li>
+                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <button
+                                class="hidden md:flex  p-6 text-xl font-semibold gap-4 items-center justify-center group">
+                                <div class="w-[40px] h-[40px] rounded-full items-center justify-center text-[var(--color-background)] bg-[var(--color-white)] flex text-2xl group-hover:bg-[var(--color-primary)] transition-colors duration-300 group-hover:cursor-pointer">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                +1 (333) 000-0000 
+                            </button>
+                            <button id="openMenuBtn"
+                                class="border-1 border-[var(--color-primary)] hover:bg-[var(--color-accent)] p-3 text-[var(--color-primary)] transition-colors duration-300 lg:hidden flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar"
+            class="max-w-[360px] w-full h-screen p-[20px] bg-[var(--color-primary)] absolute top-0 left-[-360px]">
+            <div class="flex w-full items-center justify-between">
+                <img src="./assets/logo-white" alt="company logo" class="w-[100px] h-[50px]" />
+                <button id="closeMenuBtn"
+                    class="border-1 border-[var(--color-background)] hover:bg-[var(--color-background)] active:bg-[var(--color-background)] p-3 text-[var(--color-background)] active:text-[var(--color-white)] transition-colors duration-300 flex items-center justify-center text-2xl">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+            <div class="flex flex-col mt-4">
+                <ul class="flex flex-col gap-4">
+                    <li class="py-2">
+                        <a href="#home"
+                            class="text-[var(--color-white)] hover:text-[var(--color-background)] active:text-[var(--color-background)]">Home</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#about-us"
+                            class="text-[var(--color-white)] hover:text-[var(--color-background)] active:text-[var(--color-background)]">About
+                            Us</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#our-services"
+                            class="text-[var(--color-white)] hover:text-[var(--color-background)] active:text-[var(--color-background)]">Our
+                            Services</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="#contact"
+                            class="text-[var(--color-white)] hover:text-[var(--color-background)] active:text-[var(--color-background)]">
+                            Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="px-[10px] md:px-[50px] py-[70px] md:py-[100px] bg-[var(--color-secondary-dark)]  h-full w-full">
+            <div class="w-full h-full grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+                <div class="flex flex-col gap-5 h-full">
+                    <h3 class="text-[16px] text-[var(--color-white)] font-normal uppercase">Find Your Perfect Home</h3>
+                    <h2 class="text-7xl font-semibold text-[var(--color-white)] capitalize">Expert Guidance. Trusted Deals.</h2>
+                    <p class="text-[var(--color-text)] font-normal capitalize text-[16px]">Discover a selection of properties that suit your needs and budget.</p>
+                    <button class="bg-[var(--color-primary)] text-[var(--color-background)] font-medium text-[18px] w-fit p-5 rounded-full hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] transition-colors duration-300">Schedule a Consultation</button>
+                </div>
+                <div class="flex h-full">
+                    <div class="w-full h-full "></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+<script src="./js/index.js"></script>
+</body>
+</html>
