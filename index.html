@@ -23,21 +23,21 @@
                         <nav class="flex items-center justify-between w-full h-full gap-8">
                             <ul
                                 class="hidden lg:flex items-center justify-start gap-6 font-normal text-[var(--color-secondary)]">
-                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                <li class="transition-colors duration-300 text-xl text-[var(--color-white)] hover:text-[var(--color-primary)]">
                                     <a href="#">Home</a>
                                 </li>
-                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                <li class="transition-colors duration-300 text-xl text-[var(--color-white)] hover:text-[var(--color-primary)]">
                                     <a href="#">About Us</a>
                                 </li>
-                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                <li class="transition-colors duration-300 text-xl text-[var(--color-white)] hover:text-[var(--color-primary)]">
                                     <a href="#">Our Services</a>
                                 </li>
-                                <li class="transition-colors duration-300 text-xl hover:text-[var(--color-primary)]">
+                                <li class="transition-colors duration-300 text-xl text-[var(--color-white)] hover:text-[var(--color-primary)]">
                                     <a href="#">Contact</a>
                                 </li>
                             </ul>
                             <button
-                                class="hidden md:flex  p-6 text-xl font-semibold gap-4 items-center justify-center group">
+                                class="hidden md:flex  p-6 text-xl font-semibold gap-4 items-center justify-center group text-[var(--color-white)]">
                                 <div class="w-[40px] h-[40px] rounded-full items-center justify-center text-[var(--color-background)] bg-[var(--color-white)] flex text-2xl group-hover:bg-[var(--color-primary)] transition-colors duration-300 group-hover:cursor-pointer">
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </div>
@@ -53,7 +53,7 @@
             </div>
         </div>
         <div id="sidebar"
-            class="max-w-[360px] w-full h-screen p-[20px] bg-[var(--color-primary)] absolute top-0 left-[-360px]">
+            class="max-w-[360px] w-full h-screen p-[20px] bg-[var(--color-primary)] absolute z-55 top-0 left-[-360px]">
             <div class="flex w-full items-center justify-between">
                 <img src="./assets/logo-white" alt="company logo" class="w-[100px] h-[50px]" />
                 <button id="closeMenuBtn"
@@ -87,17 +87,123 @@
         </div>
     </header>
     <main>
-        <section id="hero" class="px-[10px] md:px-[50px] py-[70px] md:py-[100px] bg-[var(--color-secondary-dark)]  h-full w-full">
-            <div class="w-full h-full grid grid-cols-1 md:grid-cols-2 items-center justify-center">
-                <div class="flex flex-col gap-5 h-full">
+        <section id="hero" class="px-[10px] md:px-[50px] py-[70px] md:py-[100px]  w-full">
+            <div class="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center px-[20px] md:px-[50px]">
+                <div class="flex flex-col gap-5 h-full justify-center text-center md:text-left">
                     <h3 class="text-[16px] text-[var(--color-white)] font-normal uppercase">Find Your Perfect Home</h3>
-                    <h2 class="text-7xl font-semibold text-[var(--color-white)] capitalize">Expert Guidance. Trusted Deals.</h2>
-                    <p class="text-[var(--color-text)] font-normal capitalize text-[16px]">Discover a selection of properties that suit your needs and budget.</p>
-                    <button class="bg-[var(--color-primary)] text-[var(--color-background)] font-medium text-[18px] w-fit p-5 rounded-full hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] transition-colors duration-300">Schedule a Consultation</button>
+                    <h2 class="text-5xl md:text-7xl font-semibold text-[var(--color-white)] capitalize">Expert Guidance. Trusted Deals.</h2>
+                    <p class="text-[var(--color-text)] font-normal capitalize text-[18px]">Discover a selection of properties that suit your needs and budget.</p>
+                    <button class="bg-[var(--color-primary)] text-[var(--color-background)] font-medium text-[18px] w-full md:w-fit p-5 rounded-full hover:text-[var(--color-primary)] hover:bg-[var(--color-background)] transition-colors duration-30">Schedule a Consultation</button>
                 </div>
                 <div class="flex h-full">
-                    <div class="w-full h-full "></div>
+                    <div class="w-[300px] h-[400px] md:w-[500px] md:h-[550px] bg-[var(--color-secondary-dark)] mx-auto">
+                        <img src="./assets/profile.png" alt="profile-img" class="w-full h-full">
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section class="py-[70px] md:py-[100px] w-full bg-[var(--color-background)] px-[10px] md:px-[50px] flex items-center justify-center">
+            <div class="flex items-center justify-center gap-5 w-full h-full flex-col md:flex-row">
+                <div class="flex flex-col gap-5 items-center justify-center text-center">
+                    <div class="mx-auto">
+                        <img src="./assets/insurance.png" alt="">
+                    </div>
+                    <h3 class="text-[24px] text-[var(--color-white)] font-medium">Verified Listings</h3>
+                    <p class="text-[18px] text-[var(--color-text)]">Nunc orci facilisis et viverra aliquam amet lectus viverra. At turpis tortor ullamcorper ornare mauris tortor risus.</p>
+                </div>
+                <div class="flex flex-col gap-5 items-center justify-center text-center">
+                    <div class="mx-auto">
+                        <img src="./assets/key.png" alt="">
+                    </div>
+                    <h3 class="text-[24px] text-[var(--color-white)] font-medium">Secure Deals</h3>
+                    <p class="text-[18px] text-[var(--color-text)]">Nunc orci facilisis et viverra aliquam amet lectus viverra. At turpis tortor ullamcorper ornare mauris tortor risus.</p>
+                </div>
+                <div class="flex flex-col gap-5 items-center justify-center text-center">
+                    <div class="mx-auto">
+                        <img src="./assets/favorite.png" alt="">
+                    </div>
+                    <h3 class="text-[24px] text-[var(--color-white)] font-medium">Top Ratings</h3>
+                    <p class="text-[18px] text-[var(--color-text)]">Nunc orci facilisis et viverra aliquam amet lectus viverra. At turpis tortor ullamcorper ornare mauris tortor risus.</p>
+                </div>
+            </div>
+        </section>
+        <section class="py-[70px] md:py-[100px] px-[30px] md:px-[50px] bg-[var(--color-white)] w-full h-full flex items-center justify-center ">
+            <div class="w-full h-full flex flex-col lg:flex-row gap-[50px]">
+                <div class="w-full lg:w-1/2 h-full flex items-center justify-center order-2 lg:order-1 pt-[50px]">
+                    <div class="w-[300px] h-[400px] md:w-[400px] md:h-[500px] bg-[var(--color-secondary-dark)]">
+                        <img src="./assets/profile.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="w-full lg:w-2/3 h-full flex justify-center flex-col gap-5 order-1 lg:order-2">
+                    <h3 class="text-[16px] text-[var(--color-text)] font-normal uppercase">About me</h3>
+                    <h2 class="text-4xl lg:text-6xl font-medium capitalize text-[var(--color-background)] ">
+                        Driven by Passion, Backed by Experience
+                    </h2>
+                    <p class="text-[18px] font-normal text-[var(--color-text)] mb-5">I am a dedicated real estate agent with a passion for helping clients find their dream homes. With years of experience in the industry, I have the knowledge and expertise to guide you through the buying or selling process with ease.</p>
+                    <div class="w-full flex flex-col md:flex-row gap-[30px]  justify-center mb-5">
+                        <div class="flex flex-col gap-5 w-full md:w-1/2 justify-center">
+                            <div class="w-[50px] h-[50px] rounded-full bg-[var(--color-secondary-dark)] text-[var(--color-secondary-light)] flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <h2 class="text-2xl font-medium capitalize text-[var(--color-background)]">Proven Track Record</h2>
+                            <p class="text-[18px] font-normal text-[var(--color-text)]">I have a proven track record of successfully helping clients buy and sell properties. My extensive knowledge of the local market and my commitment to client satisfaction set me apart from the competition.</p>
+                        </div>
+                        <div class="flex flex-col gap-5 w-full md:w-1/2 justify-center">
+                            <div class="w-[50px] h-[50px] rounded-full bg-[var(--color-secondary-dark)] text-[var(--color-secondary-light)] flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <h2 class="text-2xl font-medium capitalize text-[var(--color-background)]">Proven Track Record</h2>
+                            <p class="text-[18px] font-normal text-[var(--color-text)]">I have a proven track record of successfully helping clients buy and sell properties. My extensive knowledge of the local market and my commitment to client satisfaction set me apart from the competition.</p>
+                        </div>
+                    </div>
+                    <button class="w-full lg:w-fit p-5 text-lg bg-transparent border border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-primary)] transition-colors duration-300 rounded-full">Contact Me</button>
+                </div>
+            </div>
+        </section>
+        <section class="py-[70px] md:py-[100px] px-[30px] md:px-[50px] bg-[var(--color-secondary-light)] w-full h-full flex items-center justify-center ">
+            <div class="w-full h-full flex flex-col items-center justify-center gap-7">
+                <div class="w-full md:w-[60%] flex flex-col gap-6 items-center justify-center mb-5">
+                    <h2 class="text-lg font-normal text-[var(--color-secondary-dark)] uppercase">what i offer</h2>
+                    <h2 class="text-5xl font-medium text-[var(--color-background)] capitalize ">Full-Service Real Estate Solutions</h2>
+                    <p class="text-lg text-center font-normal text-[var(--color-text)]">I provide comprehensive real estate services, including property buying, selling, and leasing. My goal is to make the process as smooth and stress-free as possible for my clients.</p>
+                </div>
+                <div class="w-full flex flex-col lg:flex-row gap-[40px] justify-center px-[50px]">
+                    <div class="flex flex-col gap-5 w-full lg:w-1/2 justify-center items-center">
+                        <div class="text-[var(--color-background)] flex items-center justify-center text-5xl">
+                            <img src="./assets/insurance.png" alt="">
+                        </div>
+                        <h2 class="text-2xl font-medium capitalize text-[var(--color-background)]">Home Buying</h2>
+                        <p class="text-[18px] font-normal text-[var(--color-text)]">
+                            I assist clients in finding their dream homes, guiding them through the entire buying process, from property search to closing.
+                        </p>
+                        <button class="w-full lg:w-fit p-5 text-lg bg-transparent border border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-primary)] transition-colors duration-300 rounded-full">Start Your Search</button>
+                    </div>
+                    <div class="flex flex-col gap-5 w-full lg:w-1/2 justify-center items-center">
+                        <div class="text-[var(--color-background)] flex items-center justify-center text-5xl">
+                            <img src="./assets/auction.png" alt="">
+                        </div>
+                        <h2 class="text-2xl font-medium capitalize text-[var(--color-background)]">Property Selling</h2>
+                        <p class="text-[18px] font-normal text-[var(--color-text)]">
+                            I help clients sell their properties quickly and at the best price. My comprehensive marketing strategies ensure maximum exposure for your listing.
+                        </p>
+                        <button class="w-full lg:w-fit p-5 text-lg bg-transparent border border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-primary)] transition-colors duration-300 rounded-full">List Your Property</button>
+                    </div>
+                    <div class="flex flex-col gap-5 w-full lg:w-1/2 justify-center items-center">
+                        <div class="text-[var(--color-background)] flex items-center justify-center text-5xl">
+                            <img src="./assets/search.png" alt="">
+                        </div>
+                        <h2 class="text-2xl font-medium capitalize text-[var(--color-background)]">Market Analysis</h2>
+                        <p class="text-[18px] font-normal text-[var(--color-text)]">
+                            I provide clients with in-depth market analysis to help them make informed decisions. My research covers current market trends, property values, and neighborhood dynamics.
+                        </p>
+                        <button class="w-full lg:w-fit p-5 text-lg bg-transparent border border-[var(--color-background)] text-[var(--color-background)] hover:bg-[var(--color-background)] hover:text-[var(--color-primary)] transition-colors duration-300 rounded-full">Request Analysis</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-[70px] md:py-[100px] px-[30px] md:px-[50px] bg-[var(--color-secondary-light)] w-full h-full flex items-center justify-center ">
+            <div class="w-full h-full flex flex-col md:flex-row items-center justify-center gap-7">
+                <div class=""></div>
             </div>
         </section>
     </main>
